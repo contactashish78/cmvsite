@@ -37,9 +37,6 @@ jobs:
         working-directory: frontend
         run: npm run build
 
-      - name: Ensure SPA fallback (404.html)
-        run: cp frontend/build/index.html frontend/build/404.html
-
       - name: Deploy to gh-pages branch
         uses: peaceiris/actions-gh-pages@v4
         with:
