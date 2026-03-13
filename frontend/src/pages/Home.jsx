@@ -38,14 +38,14 @@ const Home = () => {
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button asChild size="lg" className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-6 text-lg rounded-xl shadow-lg shadow-blue-600/20 group">
-                  <Link to="/contact">
-                    Start Optimizing My Amazon Business
-                    <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+                <Button asChild size="lg" className="w-full sm:w-auto bg-blue-600 hover:bg-blue-700 text-white px-6 sm:px-8 py-5 sm:py-6 text-base sm:text-lg rounded-xl shadow-lg shadow-blue-600/20 group whitespace-normal text-center leading-snug h-auto">
+                  <Link to="/contact" className="flex items-center justify-center gap-2 text-center">
+                    <span>Start Optimizing My Amazon Business</span>
+                    <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform shrink-0" />
                   </Link>
                 </Button>
-                <Button asChild size="lg" variant="outline" className="border-gray-300 text-gray-700 hover:bg-gray-50 px-8 py-6 text-lg rounded-xl">
-                  <Link to="/contact">
+                <Button asChild size="lg" variant="outline" className="w-full sm:w-auto border-gray-300 text-gray-700 hover:bg-gray-50 px-6 sm:px-8 py-5 sm:py-6 text-base sm:text-lg rounded-xl whitespace-normal text-center h-auto">
+                  <Link to="/contact" className="text-center">
                     Book a Strategy Call
                   </Link>
                 </Button>
@@ -365,10 +365,10 @@ const Home = () => {
           <p className="text-xl text-blue-100 mb-10 max-w-2xl mx-auto">
             Join 300+ sellers who've optimized their Amazon business with AI-powered intelligence
           </p>
-          <Button asChild size="lg" className="bg-white text-blue-900 hover:bg-blue-50 px-10 py-7 text-lg rounded-xl shadow-2xl font-semibold group">
-            <Link to="/contact">
-              Start Optimizing My Amazon Business
-              <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+          <Button asChild size="lg" className="w-full sm:w-auto bg-white text-blue-900 hover:bg-blue-50 px-6 sm:px-10 py-5 sm:py-7 text-base sm:text-lg rounded-xl shadow-2xl font-semibold group whitespace-normal h-auto">
+            <Link to="/contact" className="flex items-center justify-center gap-2 text-center">
+              <span>Start Optimizing My Amazon Business</span>
+              <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform shrink-0" />
             </Link>
           </Button>
         </div>

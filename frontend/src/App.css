@@ -3,6 +3,11 @@
     scroll-behavior: smooth;
 }
 
+html, body, #root {
+    overflow-x: hidden;
+    max-width: 100%;
+}
+
 /* Modern Scrolling Animation */
 @keyframes scroll {
     0% {
