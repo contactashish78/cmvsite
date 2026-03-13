@@ -18,9 +18,11 @@ const Footer = () => {
             <p className="text-slate-400 leading-relaxed max-w-md">
               AI-powered Amazon Business Operating System for profit-focused sellers. Make smarter decisions, scale sustainably.
             </p>
-            <Button className="bg-blue-600 hover:bg-blue-700 text-white rounded-lg group">
-              Get Started
-              <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
+            <Button asChild className="bg-blue-600 hover:bg-blue-700 text-white rounded-lg group">
+              <Link to="/contact">
+                Get Started
+                <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
+              </Link>
             </Button>
           </div>
 

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Button } from '../components/ui/button';
 import { Card, CardContent } from '../components/ui/card';
 import { Badge } from '../components/ui/badge';
@@ -37,12 +38,16 @@ const Home = () => {
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-6 text-lg rounded-xl shadow-lg shadow-blue-600/20 group">
-                  Start Optimizing My Amazon Business
-                  <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+                <Button asChild size="lg" className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-6 text-lg rounded-xl shadow-lg shadow-blue-600/20 group">
+                  <Link to="/contact">
+                    Start Optimizing My Amazon Business
+                    <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+                  </Link>
                 </Button>
-                <Button size="lg" variant="outline" className="border-gray-300 text-gray-700 hover:bg-gray-50 px-8 py-6 text-lg rounded-xl">
-                  Book a Strategy Call
+                <Button asChild size="lg" variant="outline" className="border-gray-300 text-gray-700 hover:bg-gray-50 px-8 py-6 text-lg rounded-xl">
+                  <Link to="/contact">
+                    Book a Strategy Call
+                  </Link>
                 </Button>
               </div>
             </div>
@@ -360,9 +365,11 @@ const Home = () => {
           <p className="text-xl text-blue-100 mb-10 max-w-2xl mx-auto">
             Join 300+ sellers who've optimized their Amazon business with AI-powered intelligence
           </p>
-          <Button size="lg" className="bg-white text-blue-900 hover:bg-blue-50 px-10 py-7 text-lg rounded-xl shadow-2xl font-semibold group">
-            Start Optimizing My Amazon Business
-            <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+          <Button asChild size="lg" className="bg-white text-blue-900 hover:bg-blue-50 px-10 py-7 text-lg rounded-xl shadow-2xl font-semibold group">
+            <Link to="/contact">
+              Start Optimizing My Amazon Business
+              <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+            </Link>
           </Button>
         </div>
       </section>

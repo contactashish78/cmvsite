@@ -1,5 +1,5 @@
 import "@/App.css";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import ChatWidget from "./components/ChatWidget";
@@ -13,6 +13,8 @@ import Contact from "./pages/Contact";
 import Privacy from "./pages/Privacy";
 import Terms from "./pages/Terms";
 import RiskDisclaimer from "./pages/RiskDisclaimer";
+import Blog from "./pages/Blog";
+import BlogDetail from "./pages/BlogDetail";
 
 function App() {
   return (
@@ -30,7 +32,9 @@ function App() {
           <Route path="/privacy" element={<Privacy />} />
           <Route path="/terms" element={<Terms />} />
           <Route path="/risk-disclaimer" element={<RiskDisclaimer />} />
-
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/blog/:slug" element={<BlogDetail />} />
+          <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
         <Footer />
         <ChatWidget />
