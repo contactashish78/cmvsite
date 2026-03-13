@@ -58,7 +58,7 @@ const Home = () => {
                 <img 
                   src="https://images.unsplash.com/photo-1632813404574-b63d317ee258" 
                   alt="Amazon Dashboard"
-                  className="w-full h-auto object-cover"
+                  className="w-full aspect-[4/3] lg:aspect-auto object-cover"
                 />
               </div>
               <div className="absolute -bottom-6 -right-6 bg-gradient-to-br from-blue-600 to-cyan-600 p-6 rounded-2xl shadow-xl hidden lg:block">
@@ -176,7 +176,7 @@ const Home = () => {
             <img 
               src="https://images.unsplash.com/photo-1666875753105-c63a6f3bdc86" 
               alt="Comvinity Dashboard Interface"
-              className="relative rounded-2xl shadow-2xl border border-gray-200 w-full"
+              className="relative rounded-2xl shadow-2xl border border-gray-200 w-full aspect-[16/10] object-cover"
             />
           </div>
         </div>
