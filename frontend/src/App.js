@@ -9,14 +9,10 @@ import Features from "./pages/Features";
 import Pricing from "./pages/Pricing";
 import About from "./pages/About";
 import FAQ from "./pages/FAQ";
-import Blog from "./pages/Blog";
-import BlogDetail from "./pages/BlogDetail";
 import Contact from "./pages/Contact";
 import Privacy from "./pages/Privacy";
 import Terms from "./pages/Terms";
 import RiskDisclaimer from "./pages/RiskDisclaimer";
-import AdminBlogs from "./pages/AdminBlogs";
-import AdminBlogEditor from "./pages/AdminBlogEditor";
 
 function App() {
   return (
@@ -30,17 +26,11 @@ function App() {
           <Route path="/pricing" element={<Pricing />} />
           <Route path="/about" element={<About />} />
           <Route path="/faq" element={<FAQ />} />
-          <Route path="/blog" element={<Blog />} />
-          <Route path="/blog/:slug" element={<BlogDetail />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/privacy" element={<Privacy />} />
           <Route path="/terms" element={<Terms />} />
           <Route path="/risk-disclaimer" element={<RiskDisclaimer />} />
-          
-          {/* Admin Routes */}
-          <Route path="/admin/blogs" element={<AdminBlogs />} />
-          <Route path="/admin/blogs/new" element={<AdminBlogEditor />} />
-          <Route path="/admin/blogs/edit/:id" element={<AdminBlogEditor />} />
+
         </Routes>
         <Footer />
         <ChatWidget />
