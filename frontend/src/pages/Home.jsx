@@ -56,7 +56,7 @@ const Home = () => {
             <div className="relative">
               <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-gray-200">
                 <img 
-                  src="https://images.unsplash.com/photo-1632813404574-b63d317ee258" 
+                  src="https://images.unsplash.com/photo-1632813404574-b63d317ee123" 
                   alt="Amazon Dashboard"
                   className="w-full aspect-[4/3] lg:aspect-auto object-cover"
                 />
