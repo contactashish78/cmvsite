@@ -10,7 +10,7 @@ const FAQ = () => {
   const faqs = [
     {
       question: "How does Comvinity integrate with my Amazon account?",
-      answer: "Comvinity connects securely via Amazon's official APIs (Amazon Ads API and Amazon Seller API). You authorize read-only access through Amazon's OAuth system. We never store your Amazon credentials, and you can revoke access at any time through your Amazon Seller Central settings."
+      answer: "Comvinity connects securely via Amazon's APIs (the Amazon Ads API and Amazon Selling Partner API). You authorize read-only access through Amazon's OAuth system. We never store your Amazon credentials, and you can revoke access at any time through your Amazon Seller Central settings."
     },
     {
       question: "Will Comvinity make changes to my Amazon account automatically?",

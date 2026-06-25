@@ -47,7 +47,7 @@ const About = () => {
                 We envision a future where every Amazon seller has access to enterprise-grade business intelligence without the complexity or cost typically associated with such systems.
               </p>
               <p className="text-xl text-gray-700 leading-relaxed">
-                Comvinity aims to be the standard operating platform for Amazon commerce—a system where advertising, operations, and finance work together automatically, enabling sellers to focus on growth rather than firefighting.
+                Comvinity aims to be a unified operating platform for Amazon commerce—a system where advertising, operations, and finance work together automatically, enabling sellers to focus on growth rather than firefighting.
               </p>
             </div>
           </div>
