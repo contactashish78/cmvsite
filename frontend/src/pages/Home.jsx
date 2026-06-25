@@ -41,7 +41,7 @@ const Home = () => {
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button asChild size="lg" className="w-full sm:w-auto bg-blue-600 hover:bg-blue-700 text-white px-6 sm:px-8 py-5 sm:py-6 text-base sm:text-lg rounded-xl shadow-lg shadow-blue-600/20 group whitespace-normal text-center leading-snug h-auto">
                   <Link to="/contact" className="flex items-center justify-center gap-2 text-center">
-                    <span>Start Optimizing My Amazon Business</span>
+                    <span>Start Optimizing My Business</span>
                     <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform shrink-0" />
                   </Link>
                 </Button>
@@ -361,7 +361,7 @@ const Home = () => {
           </p>
           <Button asChild size="lg" className="w-full sm:w-auto bg-white text-blue-900 hover:bg-blue-50 px-6 sm:px-10 py-5 sm:py-7 text-base sm:text-lg rounded-xl shadow-2xl font-semibold group whitespace-normal h-auto">
             <Link to="/contact" className="flex items-center justify-center gap-2 text-center">
-              <span>Start Optimizing My Amazon Business</span>
+              <span>Start Optimizing My Business</span>
               <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform shrink-0" />
             </Link>
           </Button>
