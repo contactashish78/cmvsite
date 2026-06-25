@@ -4,12 +4,13 @@ import { Button } from '../components/ui/button';
 import { Card, CardContent } from '../components/ui/card';
 import { Badge } from '../components/ui/badge';
 import { ArrowRight, TrendingUp, DollarSign, Package, Target, BarChart3, ShoppingCart, AlertTriangle, Zap, ChevronRight } from 'lucide-react';
+import ProfitDashboard from '../components/ProfitDashboard';
 
 const Home = () => {
-  // Mock data for social proof
-  const trustedBrands = [
-    "Amazon FBA Pro", "Seller Central Elite", "Prime Brands Co", "FBA Masters", 
-    "E-commerce Elite", "Digital Retail Co", "Prime Sellers Hub", "Amazon Growth Partners"
+  // Security standards & data integrations (factual — see FAQ)
+  const integrations = [
+    "SOC 2 Type II", "AES-256 Encryption", "Amazon Ads API",
+    "Amazon Selling Partner API", "QuickBooks", "Xero"
   ];
 
   return (
@@ -23,7 +24,7 @@ const Home = () => {
             {/* Left Content */}
             <div>
               <Badge className="mb-4 bg-blue-100 text-blue-700 border-blue-200 hover:bg-blue-200">
-                Trusted by 300+ Amazon Sellers
+                Profit Intelligence for Amazon Sellers
               </Badge>
               
               <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6 text-gray-900">
@@ -54,30 +55,25 @@ const Home = () => {
 
             {/* Right Visual */}
             <div className="relative">
-              <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-gray-200">
-                <img 
-                  src="https://images.unsplash.com/photo-1632813404574-b63d317ee123" 
-                  alt="Amazon Dashboard"
-                  className="w-full aspect-[4/3] lg:aspect-auto object-cover"
-                />
-              </div>
-              <div className="absolute -bottom-6 -right-6 bg-gradient-to-br from-blue-600 to-cyan-600 p-6 rounded-2xl shadow-xl hidden lg:block">
-                <div className="text-3xl font-bold text-white">$2.4M+</div>
-                <div className="text-sm text-blue-100">Profit Optimized</div>
-              </div>
+              <ProfitDashboard />
             </div>
           </div>
         </div>
       </section>
 
-      {/* Social Proof Ticker */}
-      <section className="bg-gray-100 border-y border-gray-200 py-6 overflow-hidden">
-        <div className="flex items-center space-x-8 animate-scroll">
-          {[...trustedBrands, ...trustedBrands].map((brand, index) => (
-            <div key={index} className="text-gray-500 whitespace-nowrap font-medium">
-              {brand}
-            </div>
-          ))}
+      {/* Trust & Integration Strip */}
+      <section className="bg-gray-50 border-y border-gray-200 py-8">
+        <div className="container mx-auto px-6">
+          <p className="text-center text-xs font-semibold uppercase tracking-wider text-gray-400 mb-5">
+            Enterprise-grade security &amp; data integrations
+          </p>
+          <div className="flex flex-wrap items-center justify-center gap-x-10 gap-y-3">
+            {integrations.map((item, index) => (
+              <span key={index} className="text-gray-500 font-semibold text-sm md:text-base whitespace-nowrap">
+                {item}
+              </span>
+            ))}
+          </div>
         </div>
       </section>
 
@@ -173,11 +169,9 @@ const Home = () => {
           {/* Large Product Visual */}
           <div className="relative max-w-5xl mx-auto">
             <div className="absolute -inset-4 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-3xl blur-3xl opacity-20"></div>
-            <img 
-              src="https://images.unsplash.com/photo-1666875753105-c63a6f3bdc86" 
-              alt="Comvinity Dashboard Interface"
-              className="relative rounded-2xl shadow-2xl border border-gray-200 w-full aspect-[16/10] object-cover"
-            />
+            <div className="relative">
+              <ProfitDashboard />
+            </div>
           </div>
         </div>
       </section>
@@ -363,7 +357,7 @@ const Home = () => {
             Make Every Amazon Decision Count
           </h2>
           <p className="text-xl text-blue-100 mb-10 max-w-2xl mx-auto">
-            Join 300+ sellers who've optimized their Amazon business with AI-powered intelligence
+            Optimize your Amazon business with AI-powered profit intelligence
           </p>
           <Button asChild size="lg" className="w-full sm:w-auto bg-white text-blue-900 hover:bg-blue-50 px-6 sm:px-10 py-5 sm:py-7 text-base sm:text-lg rounded-xl shadow-2xl font-semibold group whitespace-normal h-auto">
             <Link to="/contact" className="flex items-center justify-center gap-2 text-center">
